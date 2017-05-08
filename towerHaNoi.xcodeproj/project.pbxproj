@@ -12,6 +12,7 @@
 		FA01DBCF1EC0587300228103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA01DBCD1EC0587300228103 /* Main.storyboard */; };
 		FA01DBD11EC0587300228103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA01DBD01EC0587300228103 /* Assets.xcassets */; };
 		FA01DBD41EC0587300228103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA01DBD21EC0587300228103 /* LaunchScreen.storyboard */; };
+		FA01DBDC1EC0653A00228103 /* photofacefun_com_1494232242.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA01DBDB1EC0653A00228103 /* photofacefun_com_1494232242.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FA01DBD01EC0587300228103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA01DBD31EC0587300228103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA01DBD51EC0587300228103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA01DBDB1EC0653A00228103 /* photofacefun_com_1494232242.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photofacefun_com_1494232242.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				FA01DBC91EC0587300228103 /* AppDelegate.swift */,
 				FA01DBCB1EC0587300228103 /* ViewController.swift */,
+				FA01DBDB1EC0653A00228103 /* photofacefun_com_1494232242.jpg */,
 				FA01DBCD1EC0587300228103 /* Main.storyboard */,
 				FA01DBD01EC0587300228103 /* Assets.xcassets */,
 				FA01DBD21EC0587300228103 /* LaunchScreen.storyboard */,
@@ -126,6 +129,7 @@
 			files = (
 				FA01DBD41EC0587300228103 /* LaunchScreen.storyboard in Resources */,
 				FA01DBD11EC0587300228103 /* Assets.xcassets in Resources */,
+				FA01DBDC1EC0653A00228103 /* photofacefun_com_1494232242.jpg in Resources */,
 				FA01DBCF1EC0587300228103 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
