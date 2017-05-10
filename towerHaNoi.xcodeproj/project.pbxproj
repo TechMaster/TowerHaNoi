@@ -12,7 +12,9 @@
 		FA01DBCF1EC0587300228103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA01DBCD1EC0587300228103 /* Main.storyboard */; };
 		FA01DBD11EC0587300228103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA01DBD01EC0587300228103 /* Assets.xcassets */; };
 		FA01DBD41EC0587300228103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA01DBD21EC0587300228103 /* LaunchScreen.storyboard */; };
-		FA01DBDC1EC0653A00228103 /* photofacefun_com_1494232242.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA01DBDB1EC0653A00228103 /* photofacefun_com_1494232242.jpg */; };
+		FAAA9F871EC1BF2F001FC6EF /* Disks.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA9F861EC1BF2F001FC6EF /* Disks.swift */; };
+		FAAA9F891EC1BF4C001FC6EF /* Towers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA9F881EC1BF4C001FC6EF /* Towers.swift */; };
+		FAAA9F8B1EC1BF5D001FC6EF /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA9F8A1EC1BF5D001FC6EF /* GameEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		FA01DBD01EC0587300228103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA01DBD31EC0587300228103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA01DBD51EC0587300228103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA01DBDB1EC0653A00228103 /* photofacefun_com_1494232242.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photofacefun_com_1494232242.jpg; sourceTree = "<group>"; };
+		FAAA9F861EC1BF2F001FC6EF /* Disks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disks.swift; sourceTree = "<group>"; };
+		FAAA9F881EC1BF4C001FC6EF /* Towers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Towers.swift; sourceTree = "<group>"; };
+		FAAA9F8A1EC1BF5D001FC6EF /* GameEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				FA01DBC91EC0587300228103 /* AppDelegate.swift */,
 				FA01DBCB1EC0587300228103 /* ViewController.swift */,
-				FA01DBDB1EC0653A00228103 /* photofacefun_com_1494232242.jpg */,
+				FAAA9F881EC1BF4C001FC6EF /* Towers.swift */,
+				FAAA9F861EC1BF2F001FC6EF /* Disks.swift */,
+				FAAA9F8A1EC1BF5D001FC6EF /* GameEngine.swift */,
 				FA01DBCD1EC0587300228103 /* Main.storyboard */,
 				FA01DBD01EC0587300228103 /* Assets.xcassets */,
 				FA01DBD21EC0587300228103 /* LaunchScreen.storyboard */,
@@ -129,7 +135,6 @@
 			files = (
 				FA01DBD41EC0587300228103 /* LaunchScreen.storyboard in Resources */,
 				FA01DBD11EC0587300228103 /* Assets.xcassets in Resources */,
-				FA01DBDC1EC0653A00228103 /* photofacefun_com_1494232242.jpg in Resources */,
 				FA01DBCF1EC0587300228103 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAA9F8B1EC1BF5D001FC6EF /* GameEngine.swift in Sources */,
 				FA01DBCC1EC0587300228103 /* ViewController.swift in Sources */,
 				FA01DBCA1EC0587300228103 /* AppDelegate.swift in Sources */,
+				FAAA9F871EC1BF2F001FC6EF /* Disks.swift in Sources */,
+				FAAA9F891EC1BF4C001FC6EF /* Towers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +314,7 @@
 				FA01DBDA1EC0587300228103 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
