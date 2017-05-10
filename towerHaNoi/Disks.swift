@@ -14,6 +14,7 @@ class Disks: NSObject {
     
     init(diameter : String) {
         self.diameter = diameter
+
     }
     
     

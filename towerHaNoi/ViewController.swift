@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     let run = GameEngine()
     override func viewDidLoad() {
         super.viewDidLoad()
+        towerA.setTower(view: self.view)
+        Disks(diameter: "1").paintDisk(disk: self.view)
         run.moveAllDisk(from: towerA, to: towerC, temp: towerB)
         print("done")
     }
