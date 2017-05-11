@@ -9,24 +9,24 @@
 import UIKit
 
 class GameEngine: NSObject {
-    func moveDisk(count: Int, from: Towers ,to: Towers, temp: Towers){
-        
+    func moveDisk(count: Int, from: Towers ,to: Towers, temp: Towers) -> [Move] {
+        var move = [Move]()
         if count == 1{
             print(from.name + "->" + to.name)
-            let disk = from.removeTopDisk()
-            to.addDisk(disk: disk)
-            print("Đĩa được chuyển là \(disk.diameter)")
+            move.append(Move(from: from, to: to))
+            print(move)
         }
         else
         {
-             moveDisk(count: count - 1, from: from, to: temp, temp: to)
-             moveDisk(count: 1, from: from, to: to, temp: temp)
-             moveDisk(count: count - 1 , from: temp, to: to, temp: from)
+            move.append(contentsOf: moveDisk(count: count - 1, from: from, to: temp, temp: to))
+            move.append(contentsOf:moveDisk(count: 1, from: from, to: to, temp: temp))
+            move.append(contentsOf:moveDisk(count: count - 1 , from: temp, to: to, temp: from))
         }
+        return move
         
     }
-    func moveAllDisk(from: Towers,to:Towers,temp:Towers){
-        moveDisk(count: from.diskCount, from: from, to: to, temp: temp)
+    func moveAllDisk(from: Towers,to:Towers,temp:Towers) -> [Move] {
+        return moveDisk(count: from.diskCount, from: from, to: to, temp: temp)
     }
     
     }
@@ -37,13 +37,14 @@ struct Move{
         self.from = from
         self.to = to
     }
-    func execute(){
+    func execute() -> Disks{
         let disk = from.removeTopDisk()
         to.addDisk(disk: disk)
         print("Đĩa được chuyển là \(disk.diameter)")
-//        return disk
+        return disk
         
     }
+
     
     
     

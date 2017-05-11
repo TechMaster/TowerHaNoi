@@ -19,12 +19,15 @@ class ViewController: UIViewController {
     let towerC = Towers(name: "C")
  
     let run = GameEngine()
+    
+    let graphicTower = Graphic()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        towerA.setTower(view: self.view)
-        Disks(diameter: "1").paintDisk(disk: self.view)
+        
+        self.view.addSubview(graphicTower)
         run.moveAllDisk(from: towerA, to: towerC, temp: towerB)
-        print("done")
+        
     }
 
     override func didReceiveMemoryWarning() {
