@@ -11,10 +11,11 @@ import UIKit
 class Disks: NSObject {
     
     var diameter: String
-    
     init(diameter : String) {
         self.diameter = diameter
-
+    
     }
 }
+
+
 

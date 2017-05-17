@@ -28,7 +28,19 @@ class Graphic: UIView {
     var lbl_disk2 : UILabel = UILabel()
     var lbl_disk3 : UILabel = UILabel()
     
-    var arrayPoint = [CGPoint]()
+    var lbl_disktmp1 : UILabel = UILabel()
+    var lbl_disktmp2 : UILabel = UILabel()
+    var lbl_disktmp3 : UILabel = UILabel()
+    var lbl_disktmp4 : UILabel = UILabel()
+    var lbl_disktmp5 : UILabel = UILabel()
+    var lbl_disktmp6 : UILabel = UILabel()
+    var lbl_disktmp7 : UILabel = UILabel()
+    var lbl_disktmp8 : UILabel = UILabel()
+    var lbl_disktmp9 : UILabel = UILabel()
+    var lbl_disktmp10: UILabel = UILabel()
+    
+    let arrayPoint = [[CGPoint]]()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.createTower()
@@ -70,6 +82,7 @@ class Graphic: UIView {
         self.addSubview(lbl_towerC2)
         
         }
+    
     func createDisk(){
         var screenWidth = CGFloat()
         var screenHeigtt = CGFloat()
@@ -90,6 +103,66 @@ class Graphic: UIView {
         lbl_disk3 = UILabel(frame: CGRect(x: CGFloat(20) + weightDisk*3/7, y: screenHeigtt*14/16 - 20*3, width: weightDisk/7, height: 20))
         lbl_disk3.backgroundColor = UIColor.green
         self.addSubview(lbl_disk3)
+        
+        // disk hidden
+        lbl_disktmp10 = UILabel(frame: CGRect(x: CGFloat(20) + weightDisk/7, y: screenHeigtt*14/16 - 20, width: weightDisk*5/7, height: 20))
+        lbl_disktmp10.isHidden = true
+        self.addSubview(lbl_disktmp10)
+        
+        
+        lbl_disktmp1 = UILabel(frame: CGRect(x: CGFloat(20) + weightDisk/7, y: screenHeigtt*14/16 - 20*3 - 40, width: weightDisk*5/7, height: 20))
+        lbl_disktmp1.backgroundColor = UIColor.black
+        lbl_disktmp1.isHidden = true
+        self.addSubview(lbl_disktmp1)
+        
+        lbl_disktmp2 = UILabel(frame: CGRect(x: 2*CGFloat(20) + weightDisk, y: screenHeigtt*14/16 - 20, width: weightDisk, height: 20))
+        lbl_disktmp2.backgroundColor = UIColor.black
+        lbl_disktmp2.isHidden = true
+        self.addSubview(lbl_disktmp2)
+        
+        lbl_disktmp3 = UILabel(frame: CGRect(x: 2*CGFloat(20) + weightDisk, y: screenHeigtt*14/16 - 20*2, width: weightDisk, height: 20))
+        lbl_disktmp3.backgroundColor = UIColor.black
+        lbl_disktmp3.isHidden = true
+        self.addSubview(lbl_disktmp3)
+        
+        lbl_disktmp4 = UILabel(frame: CGRect(x: 2*CGFloat(20) + weightDisk, y: screenHeigtt*14/16 - 20*3, width: weightDisk, height: 20))
+        lbl_disktmp4.backgroundColor = UIColor.black
+        lbl_disktmp4.isHidden = true
+        self.addSubview(lbl_disktmp4)
+        
+        lbl_disktmp5 = UILabel(frame: CGRect(x: 2*CGFloat(20) + weightDisk, y: screenHeigtt*14/16 - 20*5, width: weightDisk, height: 20))
+        lbl_disktmp5.backgroundColor = UIColor.black
+        lbl_disktmp5.isHidden = true
+        self.addSubview(lbl_disktmp5)
+        
+        lbl_disktmp6 = UILabel(frame: CGRect(x: 3*CGFloat(20) + weightDisk*2, y: screenHeigtt*14/16 - 20, width: weightDisk, height: 20))
+        lbl_disktmp6.backgroundColor = UIColor.black
+        lbl_disktmp6.isHidden = true
+        self.addSubview(lbl_disktmp6)
+        
+        lbl_disktmp7 = UILabel(frame: CGRect(x: 3*CGFloat(20) + weightDisk*2, y: screenHeigtt*14/16 - 20*2, width: weightDisk, height: 20))
+        lbl_disktmp7.backgroundColor = UIColor.black
+        lbl_disktmp7.isHidden = true
+        self.addSubview(lbl_disktmp7)
+        
+        lbl_disktmp8 = UILabel(frame: CGRect(x: 3*CGFloat(20) + weightDisk*2, y: screenHeigtt*14/16 - 20*3, width: weightDisk, height: 20))
+        lbl_disktmp8.backgroundColor = UIColor.black
+        lbl_disktmp8.isHidden = true
+        self.addSubview(lbl_disktmp8)
+        
+        lbl_disktmp9 = UILabel(frame: CGRect(x: 3*CGFloat(20) + weightDisk*2, y: screenHeigtt*14/16 - 20*5, width: weightDisk, height: 20))
+        lbl_disktmp9.backgroundColor = UIColor.black
+        lbl_disktmp9.isHidden = true
+        self.addSubview(lbl_disktmp9)
+        
     }
     
 }
+
+
+
+
+
+
+
+

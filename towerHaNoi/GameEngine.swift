@@ -12,15 +12,13 @@ class GameEngine: NSObject {
     func moveDisk(count: Int, from: Towers ,to: Towers, temp: Towers) -> [Move] {
         var move = [Move]()
         if count == 1{
-            print(from.name + "->" + to.name)
             move.append(Move(from: from, to: to))
-            print(move)
-        }
+            }
         else
         {
-            move.append(contentsOf: moveDisk(count: count - 1, from: from, to: temp, temp: to))
-            move.append(contentsOf:moveDisk(count: 1, from: from, to: to, temp: temp))
-            move.append(contentsOf:moveDisk(count: count - 1 , from: temp, to: to, temp: from))
+            move += moveDisk(count: count - 1, from: from, to: temp, temp: to)
+            move += moveDisk(count: 1, from: from, to: to, temp: temp)
+            move += moveDisk(count: count - 1 , from: temp, to: to, temp: from)
         }
         return move
         
@@ -37,13 +35,15 @@ struct Move{
         self.from = from
         self.to = to
     }
+    let animation = Animation()
     func execute() -> Disks{
         let disk = from.removeTopDisk()
         to.addDisk(disk: disk)
         print("Đĩa được chuyển là \(disk.diameter)")
         return disk
-        
     }
+   
+    
 
     
     

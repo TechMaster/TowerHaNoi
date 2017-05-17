@@ -12,9 +12,12 @@ class Towers: NSObject {
     
     var disks : [Disks]
     var name : String
+    
+    
     init(name: String,disks: [Disks]) {
         self.name = name
         self.disks = disks
+        
     }
     convenience init(name: String) {
         self.init(name: name, disks: Array<Disks>())
@@ -22,9 +25,14 @@ class Towers: NSObject {
     func addDisk(disk : Disks){
         disks.append(disk)
     }
+    
+    
     func removeTopDisk() -> Disks{
         return disks.removeLast()
     }
     var diskCount: Int { return disks.count }
+   
+    
+    
     
 }
